@@ -4,10 +4,10 @@ on: push
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  hello-test-python-version:
+  hello-test-python-versions:
     strategy:
       matrix: 
-        python-version : ['3.6', '3.7', '3.8']
+        python-version: ['3.6', '3.7', '3.8']
     runs-on: ubuntu-latest
     steps:
       
